@@ -1,0 +1,18 @@
+description: ''
+schema:
+  $schema: 'https://json-schema.org/draft/2020-12/schema'
+  type: object
+  properties:
+    key:
+      type: string
+      description: >-
+        The unique Supabase Key which is supplied when you create a new project
+        in your project dashboard.
+      default: ''
+    url:
+      type: string
+      description: >-
+        The unique Supabase URL which is supplied when you create a new project
+        in your project dashboard.
+      default: ''
+  required: []

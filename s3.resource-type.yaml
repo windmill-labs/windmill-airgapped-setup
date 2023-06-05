@@ -1,0 +1,37 @@
+description: >-
+  An s3 bucket connection info. The schema is taken from and meant to be used
+  with: https://github.com/bradenmacdonald/deno-s3-lite-client
+schema:
+  $schema: 'https://json-schema.org/draft/2020-12/schema'
+  type: object
+  properties:
+    accessKey:
+      type: string
+      description: ''
+    bucket:
+      type: string
+      description: ''
+    endPoint:
+      type: string
+      description: ''
+    pathStyle:
+      type: boolean
+      description: ''
+      default: false
+    port:
+      type: number
+      description: ''
+    region:
+      type: string
+      description: ''
+    secretKey:
+      type: string
+      description: ''
+    useSSL:
+      type: boolean
+      description: ''
+      default: true
+  required:
+    - endPoint
+    - bucket
+    - region

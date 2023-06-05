@@ -1,0 +1,14 @@
+description: >-
+  Discord webhook url to send messages.
+
+
+  See:
+  <https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks>
+schema:
+  $schema: 'https://json-schema.org/draft/2020-12/schema'
+  type: object
+  properties:
+    webhook_url:
+      type: string
+      description: The webhook url
+  required: []

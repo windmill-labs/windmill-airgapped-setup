@@ -1,0 +1,10 @@
+description: OAuth2 token for gmail
+schema:
+  $schema: 'https://json-schema.org/draft/2020-12/schema'
+  type: object
+  properties:
+    token:
+      type: string
+      description: ''
+  required:
+    - token

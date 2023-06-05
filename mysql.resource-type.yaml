@@ -1,0 +1,29 @@
+description: MySQL connection info
+schema:
+  $schema: 'https://json-schema.org/draft/2020-12/schema'
+  type: object
+  properties:
+    database:
+      type: string
+      description: database name
+      default: ''
+    host:
+      type: string
+      description: instance host
+      default: ''
+    password:
+      type: string
+      description: user's password
+      default: ''
+    port:
+      type: number
+      description: instance port
+      default: 3306
+    user:
+      type: string
+      description: username
+      default: ''
+  required:
+    - user
+    - database
+    - password

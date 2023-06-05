@@ -1,0 +1,16 @@
+description: ''
+schema:
+  $schema: 'https://json-schema.org/draft/2020-12/schema'
+  type: object
+  properties:
+    apiBase:
+      type: string
+      description: ''
+    apiKey:
+      type: string
+      description: ''
+    appKey:
+      type: string
+      description: ''
+  required:
+    - apiKey

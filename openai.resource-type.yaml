@@ -1,0 +1,17 @@
+description: Resource for authentication to the OpenAI API
+schema:
+  $schema: 'https://json-schema.org/draft/2020-12/schema'
+  type: object
+  properties:
+    api_key:
+      type: string
+      description: ''
+      default: ''
+    organization_id:
+      type: string
+      description: >-
+        Only needs to be set for users who belong to multiple organizations and
+        they want to use an organization other than the default one
+      default: ''
+  required:
+    - api_key

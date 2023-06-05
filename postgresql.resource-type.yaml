@@ -1,0 +1,34 @@
+description: Postgres connection info
+schema:
+  $schema: 'https://json-schema.org/draft/2020-12/schema'
+  type: object
+  properties:
+    dbname:
+      type: string
+      description: The database name
+    host:
+      type: string
+      description: The instance host
+    password:
+      type: string
+      description: The postgres users password
+    port:
+      type: integer
+      description: The instance port
+    sslmode:
+      type: string
+      description: The sslmode
+      enum:
+        - disable
+        - allow
+        - prefer
+        - require
+        - verify-ca
+        - verify-full
+    user:
+      type: string
+      description: The postgres username
+  required:
+    - dbname
+    - user
+    - password
